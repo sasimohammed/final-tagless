@@ -1,0 +1,66 @@
+Create a complete, ultra-modern web app in React using Vite, with the following requirements:
+
+Website name: "Tagless"
+Main color: White (use simple secondary colors with white as primary)
+Design: Super modern, clean, minimalistic, professional
+Features:
+- Dark and Light mode toggle with smooth transition
+- Animations for page transitions, buttons, and hover effects
+- Smooth scrolling effects
+- Image scroller / carousel for products with smooth animations
+- Responsive design for all devices
+- Facebook and Instagram icons in footer linking to placeholders
+- Modern typography, clean cards, and modern UI components
+
+1. **Products Page**:
+   - Display a single collection of products fetched from a CMS (Sanity.io)
+   - Each product should have:
+     - Name
+     - Price
+     - Description
+     - Image
+     - Stock availability
+   - Include search functionality for products
+   - Include image hover zoom effect and subtle animation when products appear
+
+2. **Order Form**:
+   - Users can select products from the single collection, quantity, and fill:
+     - Name
+     - Phone
+     - Address
+   - Form sends order data directly to the CMS (Orders collection)
+   - After submission, display a modern styled confirmation message
+   - No login or sign up required
+
+3. **Admin Dashboard**:
+   - Fetch all products and orders from CMS
+   - Admin can:
+     - Add, edit, delete products
+     - View all orders with details (name, phone, address, items, total, status)
+     - Update order status (Pending / Shipped / Done)
+   - Dashboard should be ultra-modern, user-friendly, and responsive
+   - Modern tables with sorting and filtering
+
+4. **Technical Requirements**:
+   - Use React + Vite
+   - Connect to Sanity.io CMS (provide placeholders for API keys)
+   - Fully responsive design
+   - Fast and lightweight, minimal libraries
+   - SEO-friendly meta tags using react-helmet
+   - Easy to edit and maintain
+   - Smooth animations using CSS or Framer Motion
+   - Dark & Light mode support with toggle button
+
+5. **Deployment**:
+   - Ready to deploy on Vercel
+   - No backend needed besides CMS
+   - All data stored in Sanity.io
+
+6. **Extras**:
+   - Lazy-load images for speed
+   - Pagination if many products
+   - Clear folder structure: components, pages, services, styles
+   - Footer with social icons (Facebook & Instagram)
+   - Modern interactive effects: hover, scroll reveal, card animations
+
+Please generate **full code files** (App.js, components, pages, services, CSS) ready to run on Replit, including placeholder API keys for Sanity CMS. Include comments in the code explaining each part. Make the design ultra-modern, responsive, minimalistic, and professional with all the above features included.
