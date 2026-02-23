@@ -4,11 +4,13 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
+import { CartProvider } from "@/lib/cart-context"; // ✅ إضافة CartProvider
 import NotFound from "@/pages/not-found";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Home from "@/pages/Home";
 import Checkout from "@/pages/Checkout";
+import Cart from "@/pages/Cart"; // ✅ إضافة صفحة Cart
 import Admin from "@/pages/Admin";
 
 function Router() {
@@ -19,7 +21,8 @@ function Router() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/checkout" component={Checkout} />
-          <Route path="/admin" component={Admin} />
+          <Route path="/cart" component={Cart} /> {/* ✅ إضافة Route للـ Cart */}
+          <Route path="/admin-9f8a7s6d5f4e3r2t" component={Admin} />
           <Route component={NotFound} />
         </Switch>
       </main>
@@ -33,8 +36,10 @@ function App() {
     <ThemeProvider defaultTheme="light" storageKey="tagless-theme">
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <Toaster />
-          <Router />
+          <CartProvider> {/* ✅ CartProvider يلف الـ Router */}
+            <Toaster />
+            <Router />
+          </CartProvider>
         </TooltipProvider>
       </QueryClientProvider>
     </ThemeProvider>
