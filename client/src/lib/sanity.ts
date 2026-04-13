@@ -1,7 +1,7 @@
 import { createClient } from '@sanity/client'
 
 // THIS TOKEN MUST HAVE WRITE ACCESS
-const SANITY_TOKEN = "skhjLktjkOYkA00hep3113kLzbtUVCPsKjPYTVGcqQvNawnOUQsAiFTSw8jBMVxbgzgIUJhIyC4sf9lplvbrmk7aR9N536XBb7cPZ8NMQ4Qrtrkd7hLxWae9hFcjLI1I1BkRf0bTcPyedV0O8EmyPvtJIKrf4PonFdxRz7QsDwMSDwRiYeSO"
+const SANITY_TOKEN = "skkTelfpxbimQ2qqfiDs3TS2Mii5o6j6mwTuwL0glCIGX1kqSr6kU4RqU6eQjpf4rsY6vhqKPvaVqFUdxqBfnADwF9sQfPBvHNhaoHlxHZnYhu5g0G8oomDIYgK5OFU30lvt1e9aR0fytMZ7G33s41MR3hFBVViQtUJicEddAMpaiKcBNMHY"
 
 export const client = createClient({
   projectId: 'setou27e',
